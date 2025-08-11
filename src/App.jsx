@@ -12,7 +12,7 @@ export default function App() {
       <header className="bg-blue-600 text-white p-4 sticky top-0">
         <div className="max-w-2xl mx-auto flex items-center justify-between">
           <h1 className="text-lg font-semibold">Lab Records</h1>
-          <nav className="flex gap-2">
+          <nav className="flex gap-3">
             <Link to="/" className="text-sm">Home</Link>
             <Link to="/add" className="text-sm">Add</Link>
             <Link to="/checkups" className="text-sm">Checkups</Link>

@@ -34,7 +34,7 @@ export default function ViewRecord() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row sm:justify-between">
-                    <span><strong>Doctor:</strong> {doctors ? `${doctor.name} — ${doctor.phone}`:""}</span>
+                    <span><strong>Doctor:</strong> {doctor ? `${doctor.name} — ${doctor.phone}`:""}</span>
                     <span><strong>Total Price:</strong> ₹{r.totalPrice}</span>
                 </div>
 

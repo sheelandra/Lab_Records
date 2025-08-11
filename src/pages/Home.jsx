@@ -10,7 +10,7 @@ export default function Home() {
       <h2 className="text-xl font-semibold text-gray-800">All Records</h2>
       <Link
         to="/add"
-        className="text-sm bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded transition duration-300 ease-in-out"
+        className="text-sm bg-green-500 hover:bg-green-700 text-white px-4 py-2 rounded transition duration-300 ease-in-out"
       >
         + Add
       </Link>
@@ -38,7 +38,7 @@ export default function Home() {
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-3">
               <Link
                 to={`/view/${r.id}`}
                 className="px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white rounded text-sm transition duration-300"

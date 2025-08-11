@@ -5,7 +5,7 @@ export default function RecordForm({ onSubmit, initialData }) {
   const { checkups, doctors } = useLab()
   const [form, setForm] = useState(initialData || {
     personName: '', age: '', gender: '', phone: '',
-    checkupIds: [], doctorId: '', date: Date.now(), time: '', discount: 0
+    checkupIds: [], doctorId: '', date: '', time: '', discount: 0
   })
   const [errors, setErrors] = useState({})
 
@@ -124,9 +124,9 @@ export default function RecordForm({ onSubmit, initialData }) {
           value={form.doctorId}
           onChange={e => setForm({ ...form, doctorId: e.target.value })}
         >
-          <option value="">Select Doctor</option>
+          <option value="" se>Select Doctor</option>
           {doctors.map(d => (
-            <option key={d.id}>{d.name} — {d.phone}</option>
+            <option   value={d.id} >{d.name} — {d.phone}</option>
           ))}
         </select>
       </div>
